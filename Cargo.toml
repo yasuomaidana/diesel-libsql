@@ -18,6 +18,7 @@ diesel-async = { version = "0.8", optional = true }
 futures-util = { version = "0.3", optional = true }
 opentelemetry = { version = "0.31", optional = true }
 chrono = { version = "0.4", default-features = false, features = ["std", "clock"], optional = true }
+diesel-cte-ext = { version = "0.3", default-features = false, optional = true }
 
 # We need bundled sqlite3 for diesel's sqlite feature (type metadata only)
 [dependencies.libsqlite3-sys]
@@ -33,6 +34,7 @@ bb8 = ["async", "diesel-async/bb8"]
 otel = ["dep:opentelemetry"]
 encryption = ["libsql/encryption"]
 chrono = ["dep:chrono", "diesel/chrono"]
+cte-ext = ["dep:diesel-cte-ext"]
 
 [dev-dependencies]
 tempfile = "3"

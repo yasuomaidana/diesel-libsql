@@ -316,6 +316,7 @@ Spans follow [OTel database semantic conventions](https://opentelemetry.io/docs/
 | `otel` | OpenTelemetry span instrumentation | `opentelemetry` |
 | `encryption` | AES-256 encryption at rest | `libsql/encryption` (needs `cmake`) |
 | `chrono` | `NaiveDate`, `NaiveTime`, `NaiveDateTime`, `DateTime<Utc/Local>` for `Date`, `Time`, `Timestamp`, `TimestamptzSqlite` | `chrono` |
+| `cte-ext` | Recursive CTEs (`WITH RECURSIVE`) via `diesel-cte-ext` | `diesel-cte-ext` |
 
 ## SQLite-compatible inserts
 
